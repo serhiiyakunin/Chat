@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ingex.js",
+    "dev:client": "cd client/src/ && npm run start",
+    "dev:server": " cd server/ && npm run dev",
+    "dev_all": "concurrently \"npm run dev:client\" \"npm run dev:server\""
+  }
+}
